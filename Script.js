@@ -50,3 +50,8 @@ for (var i = 0; i < 9; ++i) {
 window.onload = function () {
     $('#displayBox').html(out);
 }
+
+function displayModal() {
+    element = document.getElementById("modal");
+    element.style.visibility = (element.style.visibility == "visible") ? "hidden" : "visible";
+}

@@ -17,3 +17,13 @@
     overflow: hidden;
     padding: 5px;
 }
+#modal {
+     position: absolute;
+     top: 25%;
+     left: 35%;
+     width: 30%;
+     height: 50%;
+     border: 1px solid black;
+     background-color: white;
+     visibility: hidden;
+ }
