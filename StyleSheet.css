@@ -1,5 +1,4 @@
  #container {
-    border: 1px solid black;
     width: 500px;
     position: absolute;
     left: 30%;
@@ -8,7 +7,7 @@
     width: 500px;
     height: 300px;
     overflow: auto;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
     padding: 5px;
 }
 #inputBox {
@@ -16,10 +15,12 @@
     height: 200px;
     overflow: hidden;
     padding: 5px;
+    border: 1px solid black;
+    border-top:  0px;
 }
 #modal {
      position: absolute;
-     top: 25%;
+     top: 15%;
      left: 35%;
      width: 30%;
      height: 50%;
