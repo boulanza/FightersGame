@@ -23,10 +23,29 @@
         <!-- modal popup for game creation -->
         <div id="modal">
             <div id="mHeader">
-                header -- <a href="#" onclick="displayModal()">close</a>
+                <span style="float: right; border: 1px solid black;">
+                    <a href="#" onclick="displayModal()" style="text-decoration: none;">X</a>
+                </span>
+                <br /><br />
+                Create a New Game
             </div>
             <div id="mContent">
-                content
+                <p>Welcome to Pillow Fighters! Do you think you are the best pillow fighter of them all? Then fill out your info below 
+                and get ready to face your mighty opponents! If you can defeat 9 other challengers and rise through the ranks, you'll 
+                become the PILLOW CHAMPION!</p>
+                
+                <div id="gameForm">
+                    <form>
+                        <p><label>Strength:</label> <input type="number" name="usrStr" min="0" max="10"><br /></p>
+                        <p><label>Defense:</label> <input type="number" name="usrDef" min="0" max="10"><br /></p>
+                        <p><label>Speed:</label> <input type="number" name="usrSpd" min="0" max="10"><br /></p>
+                        <p><label>Class:</label> <select id="usrType"></select><br /></p>
+                        <p><label>Skill:</label> <select id="usrSkill"></select><br /></p><br />
+
+                        <p><button onclick="createGame()">Submit</button></p>
+                    </form>
+                </div>
+
             </div>
             <div id="mFooter">
                 footer

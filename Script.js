@@ -47,11 +47,36 @@ for (var i = 0; i < 9; ++i) {
     out += "</li>";
 }
 
+function drownDownFill() {
+    var select = document.getElementById('usrType');
+    for (var i = 0; i < allTypes.length; i++) {
+        var opt = allTypes[i];
+        var element = document.createElement("option");
+        element.textContent = opt;
+        element.value = opt;
+        select.appendChild(element);
+    }
+
+    var select2 = document.getElementById('usrSkill');
+    for (var i = 0; i < allSkills.length; i++) {
+        var opt2 = allSkills[i];
+        var element2 = document.createElement("option");
+        element2.textContent = opt2;
+        element2.value = opt2;
+        select2.appendChild(element2);
+    }
+}
+
 window.onload = function () {
     $('#displayBox').html(out);
+    drownDownFill();
 }
 
 function displayModal() {
     element = document.getElementById("modal");
     element.style.visibility = (element.style.visibility == "visible") ? "hidden" : "visible";
+}
+
+function createGame() {
+    displayModal();
 }
